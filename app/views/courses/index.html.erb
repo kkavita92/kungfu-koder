@@ -1,0 +1,28 @@
+<h1>Courses</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Platform</th>
+    <th>Skill</th>
+    <th>Length</th>
+    <th>Difficulty</th>
+    <th>Delivery</th>
+    <th>Cost</th>
+    <th>URL</th>
+  </tr>
+
+  <% @courses.each do |course| %>
+    <tr>
+      <td><%= course.name %></td>
+      <td><%= course.platform %></td>
+      <td><%= course.skill %></td>
+      <td><%= course.length %></td>
+      <td><%= course.difficulty %></td>
+      <td><%= course.delivery %></td>
+      <td><%= course.cost %></td>
+      <td><%= course.url %></td>
+      <td><%= link_to 'Show', course_path(course) %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,48 @@
+<h1>Recommend a new course:</h1>
+
+<%= form_with scope: :course, url: courses_path,local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :platform %><br>
+    <%= form.text_field :platform %>
+  </p>
+
+  <p>
+    <%= form.label :length %><br>
+    <%= form.text_field :length %>
+  </p>
+
+
+  <p>
+    <%= form.label :difficulty %><br>
+    <%= form.text_field :difficulty %>
+  </p>
+
+  <p>
+    <%= form.label :delivery %><br>
+    <%= form.text_field :delivery %>
+  </p>
+
+  <p>
+    <%= form.label :url %><br>
+    <%= form.text_field :url %>
+  </p>
+
+  <p>
+    <%= form.label :skill %><br>
+    <%= form.text_field :skill %>
+  </p>
+
+  <p>
+    <%= form.label :cost %><br>
+    <%= form.text_field :cost %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
